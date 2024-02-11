@@ -46,7 +46,7 @@ const Captions = () => {
 
   const router = useRouter();
 
-  const generateContentMemoized = useMemo(() => generateContent, []);
+  const generateContentMemoized = useMemo(() => generateContent, [generateContent]);
 
   async function fileToGenerativePart(file) {
     const base64EncodedDataPromise = new Promise((resolve) => {
